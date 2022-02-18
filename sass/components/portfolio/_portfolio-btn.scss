@@ -1,0 +1,60 @@
+.filters-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.filters-list + .filters-list {
+  margin-left: 8px;
+}
+
+.filters-btn-list {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  background-color: $bg-secondary;
+  color: var(--primary-text-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border: 0;
+
+  transition: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filters-btn-list:hover,
+.filters-btn-list:focus {
+  background-color: $accent-color;
+  color: $secondary-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filters-btn-list.current {
+  background-color: $accent-color;
+  color: $secondary-color;
+}
+
+.projects-title {
+  margin-bottom: 4px;
+
+  color: $primary-color;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-paragraph {
+  color: $paragraph-color;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}

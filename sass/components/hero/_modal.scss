@@ -37,7 +37,7 @@
   border-radius: 4px;
 }
 
-.modal-close {
+.modal__close {
   display: block;
   position: absolute;
   top: 8px;
@@ -51,18 +51,18 @@
   background-color: $secondary-color;
 }
 
-.modal-close-svg {
+.modal__icon {
   display: block;
   background-position: center;
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal__close:hover,
+.modal__close:focus {
   fill: $accent-color;
   cursor: pointer;
 }
 
-.modal-title {
+.modal-form__title {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -78,7 +78,9 @@
   margin-bottom: 10px;
 }
 
-.modal-label {
+.modal-form__label,
+.form-field__label,
+.form-comment__label {
   display: block;
   margin-bottom: 4px;
 
@@ -88,7 +90,7 @@
   color: $paragraph-color;
 }
 
-.modal-input {
+.form-field__input {
   padding-left: 42px;
 
   width: 100%;
@@ -101,12 +103,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus + .modal-form-svg {
+.form-field__input:focus + .form-field__icon {
   fill: $accent-color;
 }
 
-.modal-text:focus,
-.modal-input:focus {
+.form-comment__text:focus,
+.form-field__input:focus {
   border-color: $accent-color;
   outline: none;
 }
@@ -115,7 +117,7 @@
   margin-bottom: 20px;
 }
 
-.modal-text {
+.form-comment__text {
   padding: 12px 16px;
   width: 100%;
   height: 120px;
@@ -129,7 +131,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-svg {
+.form-field__icon {
   position: absolute;
   top: 11px;
   left: 15px;
@@ -139,12 +141,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-link {
+.form-checkbox__link {
   color: $accent-color;
   text-decoration: underline;
 }
 
-.modal-submit {
+.modal__submit {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -166,7 +168,7 @@
   letter-spacing: 0.06em;
 }
 
-.modal-label-checkbox {
+.form-checkbox__label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,7 +183,7 @@
   margin-bottom: 30px;
 }
 
-.modal-checkbox:checked + .checkbox-icon {
+.form-checkbox__input:checked + .form-checkbox__icon {
   border-color: $accent-color;
   background-color: $accent-color;
   background-image: url(../images/iconcheck.svg);
@@ -189,11 +191,11 @@
   background-origin: border-box;
 }
 
-.modal-checkbox:focus + .checkbox-icon {
+.form-checkbox__input:focus + .form-checkbox__icon {
   border-color: $accent-color;
 }
 
-.checkbox-icon {
+.form-checkbox__icon {
   margin-right: 8px;
   content: "";
   display: inline-block;
@@ -204,7 +206,7 @@
   border-radius: 4px;
 }
 
-.modal-checkbox {
+.form-checkbox__input {
   position: absolute;
   width: 1px;
   height: 1px;

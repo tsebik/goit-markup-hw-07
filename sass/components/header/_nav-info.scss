@@ -1,9 +1,8 @@
-.navigation-tel {
+.connect-list__tel {
   margin-left: 50px;
 }
 
-.nav-mail,
-.nav-tel {
+.connect-list__link {
   display: flex;
   padding: 32px 0;
 
@@ -13,19 +12,19 @@
   color: $paragraph-color;
 }
 
-.info {
+.connect {
   display: flex;
   margin-left: auto;
 }
 
-.nav-mail:hover,
-.nav-tel:hover,
-.nav-mail:focus,
-.nav-tel:focus {
-  color: $accent-color;
+.connect-list__link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.nav-info {
+.connect-list {
   display: flex;
   margin-left: auto;
 
@@ -35,7 +34,7 @@
   letter-spacing: 0.02em;
 }
 
-.navigation-team-svg {
+.connect-list__svg {
   margin-right: 10px;
   fill: currentColor;
 }

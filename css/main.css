@@ -246,13 +246,13 @@ a {
   margin-left: -30px;
 }
 
-.task-text {
+.tasks-list__item {
   -ms-flex-preferred-size: calc(100% / 4 - 30px);
       flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
 
-.task-text::before {
+.tasks-list__item::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,7 +282,7 @@ a {
   background-image: url(../images/astronaut.svg);
 }
 
-.tasks-title {
+.tasks-list__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -290,7 +290,7 @@ a {
   text-transform: uppercase;
 }
 
-.tasks-paragraph {
+.tasks-list__paragraph {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;

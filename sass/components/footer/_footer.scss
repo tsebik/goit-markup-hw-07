@@ -5,7 +5,16 @@
   background-color: $bg-primary;
 }
 
-.footer-logo {
+.social-info {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-info {
+  margin-right: 70px;
+}
+
+.footer-info__logo {
   display: flex;
 
   color: $accent-color;
@@ -13,6 +22,10 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+
+.footer-info__logo--color {
+  color: $secondary-color;
 }
 
 .footer-address {
@@ -29,16 +42,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link {
+.footer-list__item {
   margin-top: 9px;
 }
 
-.logotip {
-  color: $secondary-color;
-}
-
-.footer-mail,
-.footer-tel {
+.footer-list__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -50,16 +58,19 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-mail:hover,
-.footer-tel:hover,
-.footer-address:hover,
-.footer-mail:focus,
-.footer-tel:focus,
-.footer-address:focus {
-  color: $accent-color;
+.footer-list__link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.footer-paragraph {
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social__paragraph {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -68,7 +79,15 @@
   margin-bottom: 20px;
 }
 
-.footer-social-link {
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social__item + .footer-social__item {
+  margin-left: 10px;
+}
+
+.footer-social__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -83,35 +102,15 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-info {
-  margin-right: 70px;
+.footer-social__link:hover {
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
-.footer-social {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-social-list {
-  display: flex;
-}
-
-.footer-social-svg {
+.footer-social__svg {
   fill: $secondary-color;
-}
-
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: $accent-color;
-}
-
-.social-info {
-  display: flex;
-  align-items: baseline;
 }
 
 .footer-group {
@@ -119,7 +118,7 @@
   margin-left: auto;
 }
 
-.footer-input-paragraph {
+.footer-input__paragraph {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -172,7 +171,7 @@
   justify-content: flex-end;
 }
 
-.footer-submit {
+.submit__btn {
   margin-left: 12px;
   padding-left: 29px;
 
@@ -199,7 +198,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-input-svg {
+.submit__svg {
   margin-left: 10px;
   right: 28px;
   top: 13px;

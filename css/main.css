@@ -759,7 +759,20 @@ a {
   background-color: #2f303a;
 }
 
-.footer-logo {
+.social-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer-info {
+  margin-right: 70px;
+}
+
+.footer-info__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,6 +781,10 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+
+.footer-info__logo--color {
+  color: #ffffff;
 }
 
 .footer-address {
@@ -784,16 +801,11 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link {
+.footer-list__item {
   margin-top: 9px;
 }
 
-.logotip {
-  color: #ffffff;
-}
-
-.footer-mail,
-.footer-tel {
+.footer-list__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -806,16 +818,21 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-mail:hover,
-.footer-tel:hover,
-.footer-address:hover,
-.footer-mail:focus,
-.footer-tel:focus,
-.footer-address:focus {
+.footer-list__link:hover, .footer-list__link:focus {
   color: #2196f3;
 }
 
-.footer-paragraph {
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-social__paragraph {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -824,7 +841,17 @@ a {
   margin-bottom: 20px;
 }
 
-.footer-social-link {
+.footer-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-social__item + .footer-social__item {
+  margin-left: 10px;
+}
+
+.footer-social__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -847,46 +874,12 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-info {
-  margin-right: 70px;
-}
-
-.footer-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.footer-social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer-social-svg {
-  fill: #ffffff;
-}
-
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social__link:hover:hover, .footer-social__link:hover:focus {
   background-color: #2196f3;
 }
 
-.social-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+.footer-social__svg {
+  fill: #ffffff;
 }
 
 .footer-group {
@@ -894,7 +887,7 @@ a {
   margin-left: auto;
 }
 
-.footer-input-paragraph {
+.footer-input__paragraph {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -933,7 +926,7 @@ a {
           align-items: center;
 }
 
-.footer-input input::-webkit-input-placeholder {
+.footer-input__place input::-webkit-input-placeholder {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -943,7 +936,7 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-input input:-ms-input-placeholder {
+.footer-input__place input:-ms-input-placeholder {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -953,7 +946,7 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-input input::-ms-input-placeholder {
+.footer-input__place input::-ms-input-placeholder {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -963,7 +956,7 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-input input::placeholder {
+.footer-input__place input::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -988,7 +981,7 @@ a {
           justify-content: flex-end;
 }
 
-.footer-submit {
+.submit__btn {
   margin-left: 12px;
   padding-left: 29px;
   color: #ffffff;
@@ -1021,7 +1014,7 @@ a {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-input-svg {
+.submit__svg {
   margin-left: 10px;
   right: 28px;
   top: 13px;

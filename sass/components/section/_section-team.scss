@@ -5,7 +5,7 @@
   background-color: $bg-secondary;
 }
 
-.team-title {
+.section-team__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -14,16 +14,12 @@
   text-align: center;
 }
 
-.team-paragraph {
-  color: $paragraph-color;
-}
-
 .team-list {
   display: flex;
   margin-left: -30px;
 }
 
-.img-team-title {
+.team-list__img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -33,7 +29,7 @@
   padding: 30px 32px;
 }
 
-.team-photo {
+.team-list__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 
@@ -44,7 +40,7 @@
   background: $secondary-color;
 }
 
-.section-title-team {
+.container-team__title {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -52,20 +48,22 @@
   line-height: 1.19;
 }
 
-.team-paragraph {
+.container-team__paragraph {
   margin-bottom: 16px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+
+  color: $paragraph-color;
 }
 
-.social-team-list {
+.social-list {
   display: flex;
   justify-content: center;
 }
 
-.social-team-link {
+.social-list__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -79,19 +77,21 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-team-svg {
+.social-list__svg {
   fill: currentColor;
 }
 
-.social-team-link:hover,
-.social-team-link:focus {
-  background-color: $accent-color;
-  color: $secondary-color;
+.social-list__link:hover {
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $secondary-color;
+  }
 }
 
-.social-team-link:hover .social-team-svg {
+.social-list__link:hover .social-list__svg {
   fill: currentColor;
 }
-.social-team-item + .social-team-item {
+.social-list__item + .social-list__item {
   margin-left: 10px;
 }

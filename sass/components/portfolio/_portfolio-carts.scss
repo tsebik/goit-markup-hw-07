@@ -60,11 +60,11 @@
   font-size: 18px;
   line-height: 1.56;
   color: $secondary-color;
-}
 
-.projects-list__link:hover .portfolio-overlay__paragraph,
-.projects-list__link:focus .portfolio-overlay__paragraph {
-  transform: translateY(0);
+  .projects-list__link:hover &,
+  .projects-list__link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .carts {

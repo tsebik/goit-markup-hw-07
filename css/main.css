@@ -58,6 +58,10 @@ a {
   border: 1px solid #ececec;
 }
 
+.header--bgcolor {
+  background-color: #ffffff;
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -721,6 +725,9 @@ a {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer--bgcolor {
   background-color: #2f303a;
 }
 

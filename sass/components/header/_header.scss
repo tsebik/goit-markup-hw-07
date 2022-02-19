@@ -2,6 +2,10 @@
   border: 1px solid #ececec;
 }
 
+.header--bgcolor {
+  background-color: $secondary-color;
+}
+
 .header-container {
   display: flex;
   align-items: center;

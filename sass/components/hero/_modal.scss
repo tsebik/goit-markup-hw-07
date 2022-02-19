@@ -56,10 +56,12 @@
   background-position: center;
 }
 
-.modal__close:hover,
-.modal__close:focus {
-  fill: $accent-color;
-  cursor: pointer;
+.modal__close:hover {
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    cursor: pointer;
+  }
 }
 
 .modal-form__title {
@@ -107,10 +109,12 @@
   fill: $accent-color;
 }
 
-.form-comment__text:focus,
-.form-field__input:focus {
-  border-color: $accent-color;
-  outline: none;
+.form-comment__text,
+.form-field__input {
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
 }
 
 .form-comment {
@@ -142,6 +146,8 @@
 }
 
 .form-checkbox__link {
+  margin-left: 10px;
+
   color: $accent-color;
   text-decoration: underline;
 }

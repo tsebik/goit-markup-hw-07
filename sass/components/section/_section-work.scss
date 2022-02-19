@@ -5,9 +5,7 @@
 .section-work__title {
   margin-bottom: 50px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36px, 1.17, null);
   text-align: center;
 }
 
@@ -49,9 +47,9 @@
   position: absolute;
 
   color: $secondary-color;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+
+  @include font(700, 14px, 1.14, null);
   text-transform: uppercase;
+
   padding-bottom: 27px;
 }

@@ -6,9 +6,9 @@
 .clients__title {
   margin-bottom: 50px;
 
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(null, 36px, 1.17, null);
   text-align: center;
+
   color: $primary-color;
 }
 

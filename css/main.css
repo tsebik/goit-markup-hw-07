@@ -217,7 +217,7 @@ a {
   color: #ffffff;
   cursor: pointer;
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
@@ -291,9 +291,9 @@ a {
 }
 
 .tasks-list__paragraph {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
   color: #757575;
 }
 
@@ -789,9 +789,9 @@ a {
 
 .footer-address {
   margin-top: 20px;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
   color: #ffffff;
   -webkit-transition: color;
   transition: color;
@@ -806,7 +806,6 @@ a {
 }
 
 .footer-list__link {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);

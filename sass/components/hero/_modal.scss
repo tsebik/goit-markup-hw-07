@@ -67,9 +67,7 @@
 .modal-form__title {
   margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(700, 20px, 1.15, null);
   text-align: center;
 
   color: $primary-color;
@@ -86,8 +84,7 @@
   display: block;
   margin-bottom: 4px;
 
-  font-size: 12px;
-  line-height: 1.17;
+  @include font(null, 12px, 1.17, null);
   letter-spacing: 0.01em;
   color: $paragraph-color;
 }
@@ -166,9 +163,7 @@
   border: none;
   cursor: pointer;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(700, 16px, 1.87, null);
 
   text-align: center;
   letter-spacing: 0.06em;
@@ -179,8 +174,7 @@
   align-items: center;
   justify-content: center;
 
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(null, 14px, 1.71, null);
 
   color: $paragraph-color;
 }

@@ -18,10 +18,9 @@
   display: flex;
 
   color: $accent-color;
+
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font(700, 26px, 1.19, null);
 }
 
 .footer-info__logotip--color {
@@ -30,10 +29,7 @@
 
 .footer-address {
   margin-top: 20px;
-
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(null, 14px, 1.71, normal);
 
   color: $secondary-color;
 
@@ -47,9 +43,7 @@
 }
 
 .footer-list__link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(null, 14px, 1.71, null);
 
   color: $additional-color;
 
@@ -71,11 +65,11 @@
 }
 
 .footer-social__paragraph {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(700, 14px, 1.14, null);
+
   text-transform: uppercase;
   color: $secondary-color;
+
   margin-bottom: 20px;
 }
 
@@ -121,9 +115,7 @@
 .footer-input__paragraph {
   margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(700, 14px, 1.14, null);
   text-transform: uppercase;
 
   color: $secondary-color;
@@ -147,8 +139,7 @@
   background-color: $bg-primary;
   color: $additional-color;
 
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(null, 16px, 1.25, null);
   align-items: center;
 }
 
@@ -157,8 +148,7 @@
     display: flex;
     align-items: center;
 
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(null, 16px, 1.25, null);
 
     color: $additional-color;
   }
@@ -183,9 +173,7 @@
 
   width: 200px;
   height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(700, 16px, 1.87, null);
 
   display: flex;
   align-items: center;

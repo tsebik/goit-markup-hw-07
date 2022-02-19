@@ -71,16 +71,16 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list__svg {
-  fill: currentColor;
-}
-
-.social-list__link:hover {
+.social-list__link {
   &:hover,
   &:focus {
     background-color: $accent-color;
     color: $secondary-color;
   }
+}
+
+.social-list__svg {
+  fill: currentColor;
 }
 
 .social-list__link:hover .social-list__svg {
